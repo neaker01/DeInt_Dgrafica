@@ -13,10 +13,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         TypedArray ta = this.getContext().obtainStyledAttributes(attrs,
                 R.styleable.GraficaCircular);
         this.percentage = ta.getInt(R.styleable.GraficaCircular_percentage,
+                0);
                 0);
 
         setContentView(R.layout.activity_main);
@@ -28,14 +28,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Texto con el porcentaje
-    Paint ptexto = new Paint();
+  /*  Paint ptexto = new Paint();
 ptexto.setTypeface(Typeface.SANS_SERIF);
 ptexto.setTextAlign(Paint.Align.CENTER);
 ptexto.setAntiAlias(true);
 ptexto.setColor(Color.BLACK);
 ptexto.setTextSize(TEXT_SIZE);
 canvas.drawText(percentage + "%", width / 2, height - 2, ptexto);
-
+*/
 
 
 }
